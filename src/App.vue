@@ -52,7 +52,7 @@ watch(workDays, (value: number) => {
     <ul class="flex gap-2 my-4">
       <li
         v-for="{ name, id } in net"
-        :class="{ 'font-bold': selectedIndex === id }"
+        :class="{ 'font-bold': selectedIndex === id - 1 }"
         :key="id"
         @click="selectedIndex = id - 1"
       >
