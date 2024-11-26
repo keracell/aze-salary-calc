@@ -2,7 +2,7 @@ import type { SalarySettings } from "@/types/finance/salary-settings.type";
 
 export const salarySettings: SalarySettings[] = [
   {
-    name: "Governement: Azercell",
+    name: "Governement (with meal)",
     taxes: [
       { from: 0, to: 2500, penalty: 14 },
       { from: 2500, to: 10000000, penalty: 25 },
@@ -15,10 +15,10 @@ export const salarySettings: SalarySettings[] = [
     ],
     allowLifeInsurance: true,
     includeMeal: true,
-    mealPerDay: 11.111
+    mealPerDay: 11.111,
   },
   {
-    name: "Governement: Current",
+    name: "Governement",
     taxes: [
       { from: 0, to: 2500, penalty: 14 },
       { from: 2500, to: 10000000, penalty: 25 },
@@ -32,7 +32,7 @@ export const salarySettings: SalarySettings[] = [
     allowLifeInsurance: true,
   },
   {
-    name: "Private: Current",
+    name: "Private",
     taxes: [
       { from: 0, to: 8000, penalty: 0 },
       { from: 8000, to: 10000000, penalty: 14 },

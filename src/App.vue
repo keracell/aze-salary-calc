@@ -39,14 +39,12 @@ watch(workDays, (value: number) => {
 
 <template>
   <main>
-    base:
-    <input type="number" v-model.number="baseSalary" />
-    life:
-    <input type="number" v-model.number="lifeInsurance" />
-    totalWorkDays:
-    <input type="number" v-model.number="totalWorkDays" />
-    workDays:
-    <input type="number" v-model.number="workDays" />
+    <div class="grid lg:flex lg:flex-wrap">
+      <div class="">base: <input type="number" v-model.number="baseSalary" /></div>
+      <div class="">life: <input type="number" v-model.number="lifeInsurance" /></div>
+      <div class="">totalWorkDays: <input type="number" v-model.number="totalWorkDays" /></div>
+      <div class="">workDays: <input type="number" v-model.number="workDays" /></div>
+    </div>
     <br />
 
     <ul class="flex gap-2 my-4">
